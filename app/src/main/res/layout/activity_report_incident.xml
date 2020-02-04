@@ -30,7 +30,7 @@
         style="@style/Button.Borderless"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="@dimen/spacing_xxl"
+        android:layout_marginBottom="@dimen/spacing_xl"
         android:layout_gravity="bottom|center_horizontal"
         android:text="@string/text_end_session" />
 

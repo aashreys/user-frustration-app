@@ -44,15 +44,14 @@
     <style name="Text.Caption" parent="Text">
         <item name="android:textSize">@dimen/font_small</item>
         <item name="android:textStyle">italic</item>
-        <item name="android:opacity">translucent</item>
     </style>
 
     <style name="Button.Borderless" parent="@style/Widget.AppCompat.Button.Borderless.Colored">
         <item name="android:textSize">@dimen/font_small</item>
         <item name="android:paddingLeft">@dimen/spacing_large</item>
         <item name="android:paddingRight">@dimen/spacing_large</item>
-        <item name="android:paddingTop">@dimen/spacing_large</item>
-        <item name="android:paddingBottom">@dimen/spacing_large</item>
+        <item name="android:paddingTop">@dimen/padding_vertical_button</item>
+        <item name="android:paddingBottom">@dimen/padding_vertical_button</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
@@ -61,8 +60,8 @@
         <item name="android:textSize">@dimen/font_small</item>
         <item name="android:paddingLeft">@dimen/spacing_large</item>
         <item name="android:paddingRight">@dimen/spacing_large</item>
-        <item name="android:paddingTop">@dimen/spacing_large</item>
-        <item name="android:paddingBottom">@dimen/spacing_large</item>
+        <item name="android:paddingTop">@dimen/padding_vertical_button</item>
+        <item name="android:paddingBottom">@dimen/padding_vertical_button</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
     </style>

@@ -31,4 +31,5 @@
 
 
     <dimen name="height_toolbar">@dimen/height_large</dimen>
+    <dimen name="padding_vertical_button">20dp</dimen>
 </resources>

@@ -17,13 +17,23 @@
         app:title="@string/app_full_name" />
 
     <TextView
-        style="@style/TextAppearance.AppCompat.Body1"
+        style="@style/Text.Body"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginLeft="@dimen/spacing_medium"
         android:layout_marginRight="@dimen/spacing_medium"
+        android:paddingBottom="@dimen/spacing_xxl"
         android:layout_weight="1"
         android:gravity="center"
         android:text="@string/text_thank_you" />
+
+    <Button
+        android:id="@+id/button_start_over"
+        android:text="@string/button_start_over"
+        style="@style/Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/spacing_xl"
+        android:layout_gravity="center_horizontal"/>
 
 </LinearLayout>

@@ -47,4 +47,6 @@
 
     <string name="text_thank_you">Thank you for participating in our study. A researcher will reach out to you for your compensation.</string>
 
+    <string name="button_start_over">Start Over</string>
+
 </resources>
