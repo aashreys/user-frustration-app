@@ -6,6 +6,70 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <!-- Disable default toolbar in activities-->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Text" parent="@style/TextAppearance.AppCompat" />
+
+    <style name="Text.Heading" parent='Text'>
+        <item name="android:textSize">@dimen/font_large</item>
+    </style>
+
+    <style name="Text.Heading.Bold" parent='Text.Heading'>
+        <item name="android:textSize">@dimen/font_large</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.Subheading" parent="Text">
+        <item name="android:textSize">@dimen/font_medium</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.Title" parent='Text'>
+        <item name="android:textSize">@dimen/font_xl</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.Body" parent="Text">
+        <item name="android:textSize">@dimen/font_medium</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+    </style>
+
+    <style name="Text.Body.Small" parent="Text.Body">
+        <item name="android:textSize">@dimen/font_small</item>
+    </style>
+
+    <style name="Text.Caption" parent="Text">
+        <item name="android:textSize">@dimen/font_small</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:opacity">translucent</item>
+    </style>
+
+    <style name="Button.Borderless" parent="@style/Widget.AppCompat.Button.Borderless.Colored">
+        <item name="android:textSize">@dimen/font_small</item>
+        <item name="android:paddingLeft">@dimen/spacing_large</item>
+        <item name="android:paddingRight">@dimen/spacing_large</item>
+        <item name="android:paddingTop">@dimen/spacing_large</item>
+        <item name="android:paddingBottom">@dimen/spacing_large</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Button.Colored" parent="@style/Widget.AppCompat.Button.Colored">
+        <item name="android:textSize">@dimen/font_small</item>
+        <item name="android:paddingLeft">@dimen/spacing_large</item>
+        <item name="android:paddingRight">@dimen/spacing_large</item>
+        <item name="android:paddingTop">@dimen/spacing_large</item>
+        <item name="android:paddingBottom">@dimen/spacing_large</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Dropdown" parent="@style/Widget.AppCompat.Spinner.DropDown">
+        <item name="android:height">@dimen/height_small</item>
+        <item name="background">@android:color/darker_gray</item>
     </style>
 
 </resources>

@@ -10,42 +10,91 @@
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/height_large"
+        android:layout_height="@dimen/height_toolbar"
         android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:title="@string/app_full_name" />
 
-    <com.google.android.material.textfield.TextInputLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/spacing_medium"
-        android:layout_marginTop="@dimen/spacing_xxxl">
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
 
-        <com.google.android.material.textfield.TextInputEditText
+        <TextView
+            style="@style/Text.Heading.Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_padding"
+            android:layout_marginRight="@dimen/activity_horizontal_padding"
+            android:layout_marginBottom="@dimen/spacing_small"
+            android:labelFor="@id/input_participant_name"
+            android:text="@string/hint_participant_name" />
+
+        <EditText
+            android:id="@+id/input_participant_name"
+            style="@style/Text.Body"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/hint_participant_name" />
+            android:maxLines="1"
+            android:layout_marginLeft="@dimen/activity_horizontal_padding"
+            android:layout_marginRight="@dimen/activity_horizontal_padding"
+            android:layout_marginBottom="@dimen/spacing_xl"
+            android:inputType="textPersonName"
+            android:importantForAutofill="no" />
 
-    </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:id="@+id/button"
+            style="@style/Button.Colored"
+            android:text="@string/text_start_session"
+            android:layout_gravity="center_horizontal"/>
 
-    <Button
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:id="@+id/button"
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/height_medium"
-        android:layout_marginHorizontal="@dimen/spacing_xxxl"
-        android:layout_marginTop="@dimen/spacing_large"
-        android:maxWidth="108dp"
-        android:text="@string/text_start_session" />
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:orientation="vertical">
 
-    <TextView
-        style="@style/TextAppearance.AppCompat.Headline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/spacing_medium"
-        android:layout_marginTop="@dimen/spacing_xxxl"
-        android:text="@string/text_instructions" />
+        <TextView
+            style="@style/Text.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft= "@dimen/activity_horizontal_padding"
+            android:layout_marginRight="@dimen/activity_horizontal_padding"
+            android:layout_marginBottom="@dimen/spacing_small"
+            android:text="@string/text_instructions" />
+
+        <TextView
+            style="@style/Text.Body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft= "@dimen/activity_horizontal_padding"
+            android:layout_marginRight="@dimen/activity_horizontal_padding"
+            android:layout_marginBottom="@dimen/spacing_xs"
+            android:text="Praesent commodo cursus magna, vel scelerisque nisl consectetur et." />
+
+        <TextView
+            style="@style/Text.Body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft= "@dimen/activity_horizontal_padding"
+            android:layout_marginRight="@dimen/activity_horizontal_padding"
+            android:layout_marginBottom="@dimen/spacing_xs"
+            android:text="Fusce dapibus, ut fermentum massa justo sit amet risus." />
+
+        <TextView
+            style="@style/Text.Body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft= "@dimen/activity_horizontal_padding"
+            android:layout_marginRight="@dimen/activity_horizontal_padding"
+            android:text="Aenean lacinia bibendum nulla sed consectetur." />
+
+    </LinearLayout>
 
 
 </LinearLayout>

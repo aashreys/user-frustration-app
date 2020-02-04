@@ -2,7 +2,7 @@
     <string name="app_name">Frusto</string>
     <string name="app_full_name">User Frustration and Time Lost</string>
 
-    <string name="hint_participant_name">Participant Name</string>
+    <string name="hint_participant_name">Enter Your Name</string>
     <string name="text_start_session">Start Session</string>
 
     <string name="text_instructions">Instructions</string>
@@ -37,7 +37,7 @@
     <string name="text_record">Record</string>
 
     <string-array name="user_ratings">
-        <item>Scale of 1 - 5</item>
+        <item>Scale of 1 – 5</item>
         <item>1</item>
         <item>2</item>
         <item>3</item>
@@ -46,4 +46,5 @@
     </string-array>
 
     <string name="text_thank_you">Thank you for participating in our study. A researcher will reach out to you for your compensation.</string>
+
 </resources>

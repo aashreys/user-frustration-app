@@ -10,16 +10,18 @@
     <dimen name="spacing_xxl">48dp</dimen>
     <dimen name="spacing_xxxl">72dp</dimen>
 
+    <dimen name="activity_horizontal_padding">@dimen/spacing_medium</dimen>
+
     <dimen name="height_small">48dp</dimen>
     <dimen name="height_medium">56dp</dimen>
     <dimen name="height_large">72dp</dimen>
     <dimen name="height_xl">120dp</dimen>
 
-    <dimen name="font_xs">12sp</dimen>
-    <dimen name="font_small">14sp</dimen>
-    <dimen name="font_medium">16sp</dimen>
-    <dimen name="font_large">18sp</dimen>
-    <dimen name="font_xl">22sp</dimen>
+    <dimen name="font_xs">14sp</dimen>
+    <dimen name="font_small">16sp</dimen>
+    <dimen name="font_medium">18sp</dimen>
+    <dimen name="font_large">22sp</dimen>
+    <dimen name="font_xl">26sp</dimen>
 
     <dimen name="icon_small">18dp</dimen>
     <dimen name="icon_medium">24dp</dimen>
@@ -27,4 +29,6 @@
     <dimen name="icon_xl">48dp</dimen>
     <dimen name="icon_xxl">64dp</dimen>
 
+
+    <dimen name="height_toolbar">@dimen/height_large</dimen>
 </resources>

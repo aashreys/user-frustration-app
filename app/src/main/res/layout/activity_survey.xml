@@ -29,7 +29,7 @@
             android:paddingBottom="@dimen/spacing_medium">
 
             <TextView
-                style="@style/TextAppearance.AppCompat.Title"
+                style="@style/Text.Heading.Bold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/spacing_medium"
@@ -38,25 +38,25 @@
                 android:text="@string/text_part_1" />
 
             <TextView
-                style="@style/TextAppearance.AppCompat.Subhead"
+                style="@style/Text.Body"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/spacing_medium"
-                android:layout_marginTop="@dimen/spacing_small"
+                android:layout_marginTop="@dimen/spacing_medium"
                 android:layout_marginRight="@dimen/spacing_medium"
                 android:text="@string/text_part_1_question_1" />
 
             <Spinner
-                style="@style/Widget.AppCompat.Spinner.DropDown"
+                style="@style/Dropdown"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="@dimen/height_small"
                 android:layout_marginLeft="@dimen/spacing_medium"
                 android:layout_marginTop="@dimen/spacing_small"
                 android:layout_marginRight="@dimen/spacing_medium"
                 android:entries="@array/user_ratings" />
 
             <TextView
-                style="@style/TextAppearance.AppCompat.Subhead"
+                style="@style/Text.Body"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/spacing_medium"
@@ -65,9 +65,9 @@
                 android:text="@string/text_part_1_question_2" />
 
             <Spinner
-                style="@style/Widget.AppCompat.Spinner.DropDown"
+                style="@style/Dropdown"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="@dimen/height_small"
                 android:layout_marginLeft="@dimen/spacing_medium"
                 android:layout_marginTop="@dimen/spacing_small"
                 android:layout_marginRight="@dimen/spacing_medium"
@@ -75,7 +75,7 @@
 
 
             <TextView
-                style="@style/TextAppearance.AppCompat.Title"
+                style="@style/Text.Heading.Bold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/spacing_medium"
@@ -84,7 +84,7 @@
                 android:text="@string/text_part_2" />
 
             <TextView
-                style="@style/TextAppearance.AppCompat.Body1"
+                style="@style/Text.Caption"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/spacing_medium"
@@ -94,16 +94,16 @@
                 android:textStyle="italic" />
 
             <TextView
-                style="@style/TextAppearance.AppCompat.Subhead"
+                style="@style/Text.Body"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/spacing_medium"
-                android:layout_marginTop="@dimen/spacing_small"
+                android:layout_marginTop="@dimen/spacing_medium"
                 android:layout_marginRight="@dimen/spacing_medium"
                 android:text="@string/text_part_2_question_1" />
 
             <TextView
-                style="@style/TextAppearance.AppCompat.Subhead"
+                style="@style/Text.Body"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/spacing_medium"
@@ -112,7 +112,7 @@
                 android:text="@string/text_part_2_question_2" />
 
             <TextView
-                style="@style/TextAppearance.AppCompat.Subhead"
+                style="@style/Text.Body"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/spacing_medium"
@@ -121,13 +121,22 @@
                 android:text="@string/text_part_2_question_3" />
 
             <TextView
-                style="@style/TextAppearance.AppCompat.Subhead"
+                style="@style/Text.Body"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/spacing_medium"
                 android:layout_marginTop="@dimen/spacing_small"
                 android:layout_marginRight="@dimen/spacing_medium"
                 android:text="@string/text_part_2_question_4" />
+
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/spacing_medium"
+                android:layout_marginBottom="@dimen/spacing_medium"
+                android:id="@+id/text_recording_time"
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:layout_height="wrap_content" />
 
             <Button
                 android:id="@+id/button"
@@ -136,7 +145,8 @@
                 android:layout_height="@dimen/height_medium"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="@dimen/spacing_medium"
-                android:paddingHorizontal="@dimen/spacing_xl"
+                android:paddingLeft="@dimen/spacing_xl"
+                android:paddingRight="@dimen/spacing_xl"
                 android:text="@string/text_record" />
 
         </LinearLayout>
